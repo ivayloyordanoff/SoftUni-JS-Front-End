@@ -13,11 +13,9 @@ function employees(arr) {
   }
 
   for (const person of personArr) {
-    for (const key in person) {
-      let employeeName = person[key];
-      let personalNum = employeeName.toString().length;
+    let employeeName = person.name;
+    let personalNum = employeeName.toString().length;
 
-      console.log(`Name: ${employeeName} -- Personal Number: ${personalNum}`);
-    }
+    console.log(`Name: ${employeeName} -- Personal Number: ${personalNum}`);
   }
 }
