@@ -33,7 +33,8 @@ function solve() {
 
     addButtons.forEach((btn) => {
       btn.removeEventListener("click", addToCart);
-      document.querySelector(".checkout").disabled = true;
     });
+
+    checkoutBtn.removeEventListener("click", checkout);
   }
 }
